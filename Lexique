@@ -1,0 +1,32 @@
+Agile : 
+les 5 étapes du cycle de vie agile |
+Le cycle de vie agile est divisé en 5 étapes : la planification, l'analyse, la conception, le développement et le test.
+La conception web agile s'appuie sur des sprints, chacun avec un objectif et un calendrier spécifiques
+
+
+
+
+Wireframe :
+C’est comme le plan d’architecte d’un site :
+il montre où placer les menus, titres, images, boutons, textes, etc., sans style ni couleur.
+En-tête (logo + menu)
+
+Zone principale (image, texte, bouton)
+
+Sidebar (barre latérale)
+
+Pied de page (footer)
+
+Champs de formulaire
+
+Icônes ou emplacements d’image (souvent représentés par des croix ou des rectangles gris)
+
+
+
+
+Kanban:
+Le Kanban est un système visuel pour organiser, suivre et gérer les tâches d’un projet. Il permet à une équipe de voir clairement ce qui doit être fait, ce qui est en cours, et ce qui est terminé.
+
+À faire (To Do) | En cours (In Progress) | Terminé (Done)
+- Page d'accueil | - Intégration contact | - Logo validé
+- Formulaire | - Responsive mobile | - Hébergement en ligne

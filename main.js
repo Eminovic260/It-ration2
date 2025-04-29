@@ -3,33 +3,25 @@ const url = 'https://v2.jokeapi.dev/joke/Any?lang=fr';
 const container = document.getElementById('blague-container');
 const nombreDeBlagues = 5;
 
-for (let i = 0; i < nombreDeBlagues; i++) {
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            const div = document.createElement("div");
-            div.className = "blague";
-
-            div.innerHTML = `<strong>Blague</strong> ${i + 1} : ${data.setup} ${data.delivery}`;
-            container.appendChild(div);
-        });
-}
-
-const refreshButton = document.getElementById('refresh-button');
-refreshButton.addEventListener('click', () => {
-    container.innerHTML = '';
+function genererBlague() {
     for (let i = 0; i < nombreDeBlagues; i++) {
         fetch(url)
             .then(response => response.json())
             .then(data => {
                 const div = document.createElement("div");
                 div.className = "blague";
-    
+
                 div.innerHTML = `<strong>Blague</strong> ${i + 1} : ${data.setup} ${data.delivery}`;
                 container.appendChild(div);
             });
-        }
-    //location.reload();
-    // clear container
-    // call fetch à nouveau
-});
+    }
+}
+
+const refreshButton = document.getElementById('refresh-button');
+refreshButton.addEventListener('click', () => {
+    container.innerHTML = '';
+    genererBlague();
+    }
+);
+
+genererBlague();

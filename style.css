@@ -2,10 +2,18 @@ body {
     background-color: rgb(255, 237, 237);
 }
 
-#conseils-container {
+.logo {
+    width: 20vw;
+    height: auto;
+}
+
+#blague-container {
     background-color: rgb(151, 168, 247);
 }
 
-.conseil {
+.blague {
     margin: 20px;
+    display: flex;
+    font-size: 1.5em;
+
 }

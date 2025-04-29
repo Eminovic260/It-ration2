@@ -10,8 +10,10 @@ for (let i = 0; i < nombreDeConseils; i++) {
             div.className = "conseil";
             div.innerHTML = `Conseil #${i + 1} : "${data.slip.advice}"`;
             container.appendChild(div);
-        })
-        .catch(error => {
-            console.error("Erreur lors de la récupération du conseil :", error);
         });
 }
+
+const refreshButton = document.getElementById('refresh-button');
+refreshButton.addEventListener('click', () => {
+    location.reload();
+});

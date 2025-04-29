@@ -3,8 +3,14 @@ body {
 }
 
 .logo {
-    width: 20vw;
+    margin: left 20%;
+    width: 200px;
     height: auto;
+}
+.navbar{
+    font-size:larger;
+    color : white;
+    background-color: #01035C;
 }
 
 #blague-container {
@@ -15,5 +21,14 @@ body {
     margin: 20px;
     display: flex;
     font-size: 1.5em;
+justify-content: ;
+}
 
+#refresh-button {
+    font-size: large;
+    font-
+    margin: 20px;
+    margin-left : 20px;
+width: 200px;
+height: auto;
 }

@@ -3,6 +3,23 @@ const url = 'https://v2.jokeapi.dev/joke/Any?lang=fr';
 const container = document.getElementById('blague-container');
 const nombreDeBlagues = 5;
 
+
+
+const hamburgerButton = document.querySelector(".navToggler")
+const navigation = document.querySelector("nav")
+
+hamburgerButton.addEventListener("click", toggleNav)
+
+function toggleNav() {
+    hamburgerButton.classList.toggle("active")
+    navigation.classList.toggle("active")
+}
+
+
+
+
+
+
 function genererBlague() {
     for (let i = 0; i < nombreDeBlagues; i++) {
         fetch(url)
@@ -21,7 +38,9 @@ const refreshButton = document.getElementById('refresh-button');
 refreshButton.addEventListener('click', () => {
     container.innerHTML = '';
     genererBlague();
-    }
+}
 );
+
+
 
 genererBlague();

@@ -2,6 +2,9 @@
 const url = 'https://v2.jokeapi.dev/joke/Any?lang=fr';
 const container = document.getElementById('blague-container');
 const nombreDeBlagues = 5;
+genererBlague();
+
+
 
 
 
@@ -14,6 +17,16 @@ function toggleNav() {
     hamburgerButton.classList.toggle("active")
     navigation.classList.toggle("active")
 }
+
+
+
+const formulaireButton = document.querySelector("#formulaire")
+formulaireButton.addEventListener('click', toggleForm)
+
+function toggleForm() {
+    formulaireButton.classList.toggle("active")
+}
+
 
 
 
@@ -40,7 +53,3 @@ refreshButton.addEventListener('click', () => {
     genererBlague();
 }
 );
-
-
-
-genererBlague();

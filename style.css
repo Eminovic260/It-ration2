@@ -11,12 +11,15 @@ body {
     color: #f1f1f1;
     padding: 10px 20px;
 }
-footer{
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:right;
     margin-top: 75px;
     background-image: linear-gradient(to left, #01035C, #007bff);
     color: white;
     padding: 10px 20px;
-    height: 100px;;
 }
 
 
@@ -34,9 +37,11 @@ footer{
 }
 
 
+
+
 .navToggler {
     position: absolute;
-    right: 40px;
+    right: 100px;
     z-index: 10;
     border: none;
     cursor: pointer;
@@ -53,7 +58,7 @@ footer{
     width: 40px;
     height: 3px;
     transition: transform 0.3s ease-out, opacity 0.1s ease-out;
-    background :azure;
+    background: #f1f1f1;
 }
 
 .l1 {
@@ -67,15 +72,17 @@ footer{
 .navToggler.active .l1 {
     transform: translateY(0px) rotate(135deg);
 }
+
 .navToggler.active .l2 {
     opacity: 0;
 }
-.navToggler.active .l3{
+
+.navToggler.active .l3 {
     transform: translateY(0px) rotate(-135deg);
 }
 
-nav  {
-    position:absolute;
+nav {
+    position: absolute;
     width: 100vw;
     min-height: 21vh;
     display: flex;
@@ -86,15 +93,17 @@ nav  {
     transform: translateY(-100%);
     transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
 }
+
 nav.active {
     transform: translate(0);
-    
+
 }
+
 nav a {
     font-family: Quicksand, sans-serif;
     color: #f1f1f1;
     font-size: 20px;
-    font-weight: bold; 
+    font-weight: bold;
     display: block;
     margin: 10px 0;
     text-decoration: none;
@@ -117,12 +126,35 @@ nav a {
 
 }
 
+
+.bouttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 #refresh-button {
     font-size: large;
     margin: 50px;
-    margin-left: 100px;
     width: 15%;
     height: 45px;
     background-color: rgb(255, 196, 48);
     cursor: pointer;
 }
+
+#formulaire {
+    font-size: large;
+    width: 15%;
+    height: 45px;
+    background-color: rgb(255, 196, 48);
+    cursor: pointer;
+}
+#formulaire.active {
+    transform: translateY(0px) rotate(35deg);
+
+}
+
+
+
+
+

@@ -1,5 +1,6 @@
 body {
     background-color: #f1f1f1;
+    
 }
 
 
@@ -10,6 +11,7 @@ body {
     background-image: linear-gradient(to right, #01035C, #007bff);
     color: #f1f1f1;
     padding: 10px 20px;
+    border-radius: 20px;
 }
 
 footer {
@@ -20,6 +22,7 @@ footer {
     background-image: linear-gradient(to left, #01035C, #007bff);
     color: white;
     padding: 10px 20px;
+    border-radius: 20px;
 }
 
 
@@ -33,7 +36,8 @@ footer {
 .nomDuSite {
     font-size: 4vh;
     color: rgb(255, 196, 48);
-
+    margin-left: 8vh;
+    margin-right: 8vh;
 }
 
 
@@ -116,14 +120,19 @@ nav a {
 
 #blague-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    
+    
 }
 
 .blague {
     margin: 40px;
     font-size: 1.5em;
-
+    box-shadow: #01035C 0px 0px 20px 5px; 
+    background-color: #f1f1f1;
+    padding: 2em;
+    border-radius: 20px;
+    
 }
 
 

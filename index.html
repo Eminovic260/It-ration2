@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <link href="Gallerie.html" rel="stylesheet">
-    <link href="Jeux.html" rel="stylesheet">
     <title>Guide de Formation</title>
 </head>
 
@@ -14,7 +12,7 @@
     <header class="header">
 
         <a href="index.html">
-            <img class="logo" ; src="/Images/Logo.png" alt="Logo de l'entreprise">
+            <img class="logo" src="/Images/Logo.png" alt="Logo de l'entreprise">
         </a>
 
         <h1 class="nomDuSite">Guide de Formation</h1>
@@ -36,16 +34,43 @@
     <div class="bouttons">
         <button id="refresh-button"><strong>Actualiser les blagues</strong></button>
 
-        
-        <button id="formulaire"><strong>ajouter un article</strong></button>
+
+        <button id="formulaire"><strong>ajouter une blague</strong></button>
     </div>
 
+
+
+    <div id="formulaire-container">
+        <div class="container">
+            <!-- Title section -->
+            <div class="title">Nouvelle Blague</div>
+            <div class="content">
+                <!-- Registration form -->
+                <form action="#">
+                    <div class="user-details">
+                        <!-- Input for Full Name -->
+                        <div class="input-box">
+                            <input type="text" name="blague" id="blague-input" placeholder="Nouvelle Blague" required>
+                        </div>
+
+                        <!-- Submit button -->
+                        <div class="buttonPoster">
+                            <input type="submit" value="Poster">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <div id="blague-container">
 
     </div>
-    
+
+
+
+
 
 
     <script src="main.js">

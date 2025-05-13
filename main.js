@@ -72,6 +72,10 @@ refreshButton.addEventListener('click', () => {
 );
 
 
+
+
+
+
 // ajout de blague manuelle
 const formulaire = document.querySelector('form');
 const blagueInput = document.getElementById('blague-input');

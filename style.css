@@ -231,10 +231,19 @@ nav a {
 .material-symbols-outlined {
     font-size: 48px;
     cursor: pointer;
-    color: #01035C;
+    color: rgb(255, 196, 48);
     margin:1vh;
+    box-shadow: #01035C 0px 0px 5px 10px;
+    background-color:#01035C ;
+    border-radius: 10px;
 }
 
 .bouttonsGallerie {
     margin: 10vh;
+}
+
+
+
+.addPhotoo{
+    display: none;
 }

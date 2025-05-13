@@ -15,9 +15,15 @@ function toggleNav() {
 
 
 
+
+
+
 const photoContainer = document.querySelector(".photoContainer");
 const btnMosaique = document.getElementById("btn-mosaique");
 const btnColumn = document.getElementById("btn-column");
+const supprimerPhoto = document.getElementById("btn-sup");
+const inputPhoto = document.getElementById("add-photo");
+
 
 btnMosaique.addEventListener("click", mosaique);
 btnColumn.addEventListener("click", column);
@@ -42,7 +48,7 @@ function column() {
 
 
 
-const inputPhoto = document.getElementById("add-photo");
+
 
 inputPhoto.addEventListener("change", function (event) {
     if (event.target.files.length > 0) {
@@ -52,8 +58,16 @@ inputPhoto.addEventListener("change", function (event) {
         img.src = src;
         img.alt = "Image ajoutée";
         img.style.objectFit = "cover";
+        img.classList.add("photo-ajoutee");
 
-        const photoContainer = document.querySelector(".photoContainer");
         photoContainer.appendChild(img);
     }
 });
+
+
+supprimerPhoto.addEventListener("click", supPhoto)
+
+function supPhoto() {
+    const imagesAjoutée = photoContainer.querySelectorAll(".photo-ajoutee");
+    imagesAjoutée.forEach(img => img.remove());
+}

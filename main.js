@@ -64,16 +64,6 @@ function genererBlague() {
 }
 
 
-const refreshButton = document.getElementById('refresh-button');
-refreshButton.addEventListener('click', () => {
-    container.innerHTML = '';
-    genererBlague();
-}
-);
-
-
-
-
 
 
 // ajout de blague manuelle
@@ -95,3 +85,20 @@ formulaire.addEventListener('submit', function (e) {
         alert("Merci d'écrire une blague avant de l'envoyer !");
     }
 });
+
+
+
+
+const btnSupprimer = document.getElementById("bouttonSupprimer");
+btnSupprimer.addEventListener('click', () => {
+    container.innerHTML = '';
+    genererBlague();
+}
+);
+
+const refreshButton = document.getElementById('refresh-button');
+refreshButton.addEventListener('click', () => {
+    container.innerHTML = '';
+    genererBlague();
+}
+);

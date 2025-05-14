@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>Jeux</title>
 </head>
+
 <body>
     <header class="header">
 
@@ -30,6 +32,19 @@
     </header>
 
 
+    <h1>Jeu de Mémoire</h1>
+
+    <label for="difficulty">Choisir la difficulté :</label>
+    <select id="difficulty">
+      <option value="facile">Facile</option>
+      <option value="moyen">Moyen</option>
+      <option value="difficile">Difficile</option>
+    </select>
+    <button id="startBtn">Démarrer</button>
+  
+    <div id="gameInfo"></div>
+    <div class="card-grid" id="cardGrid"></div>
+  
 
 
 
@@ -37,8 +52,7 @@
 
 
 
-
-    <script src="main.js">
+    <script src="jeux.js">
     </script>
 
     <footer>
@@ -49,4 +63,5 @@
 
     </footer>
 </body>
+
 </html>

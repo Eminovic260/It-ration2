@@ -19,6 +19,8 @@ const difficultySelect = document.getElementById("difficulty");
 const cardGrid = document.getElementById('cardGrid');
 const gameInfo = document.getElementById("gameInfo");
 
+const reveal = document.querySelector(".cards img")
+
 startBtn.addEventListener('click', () => {
     const selectedDifficulty = difficultySelect.value;
     fetchGameData(selectedDifficulty);
@@ -59,6 +61,9 @@ function displayCards(cards) {
         img.alt = 'carte';
         cardDiv.appendChild(img);
         cardGrid.appendChild(cardDiv);
+        cardDiv.addEventListener("click", () => {
+            cardDiv.classList.toggle("flipped");
+        })
     });
 }
 
@@ -70,10 +75,4 @@ function showGameInfo(difficulty, pairs, time, playerName) {
     <p><strong>Paires à trouver :</strong> ${pairs}</p>
     <p><strong>Temps imparti :</strong> ${time} secondes</p>
   `;
-}
-
-
-
-function revealCards () {
-    
 }
